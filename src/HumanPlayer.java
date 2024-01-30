@@ -8,13 +8,12 @@ public class HumanPlayer extends Player{
     public String getName(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("¿Cúal es tu nombre?: ");
+        System.out.println("¿Cúal es tu nombre? (presiona Enter después de ingresar tu nombre) : ");
 
-        String name = sc.nextLine();
 
-        System.out.println("Bienvenido a Guess the Number " + name );
 
-        return name;
+        return sc.nextLine();
+
 
 
     }
@@ -27,9 +26,12 @@ public class HumanPlayer extends Player{
 
             Scanner sc = new Scanner(System.in);
 
-            System.out.println("Ingrese su suposición: ");
+            System.out.println("Ingrese su suposición: \n");
+            int guess = Integer.parseInt(sc.nextLine());
 
-            return Integer.parseInt(sc.nextLine());
+            //Agrega los intentos al array
+            guesses.add(guess);
+            return guess;
 
         }
 
@@ -37,27 +39,7 @@ public class HumanPlayer extends Player{
         //almacena historial de partidas de la jugadora
         public ArrayList<Integer> getGuesses() {
 
-
-            //Definir o declarar nuestro arreglo para suposiciones
-            ArrayList<Integer> guesses = new ArrayList<>();
-
-
-            //int numberOfTheGuess = 30;
-
-            for (int i = 0; i <50; i++) {
-                guesses.add(makeGuess());
-
-            }
-
-
-
-            System.out.println(guesses.size());
-
-
-
-
-
-
+            //Devuelve nuestro arreglo para suposiciones
             return guesses;
 
         }
