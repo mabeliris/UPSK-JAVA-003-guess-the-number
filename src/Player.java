@@ -1,26 +1,23 @@
 import java.util.ArrayList;
+import java.util.List;
 
 
 public abstract class Player {
-    private final String name;
-    protected ArrayList<Integer> guesses;
+    protected  String name;
+    protected  List<Integer> guesses= new ArrayList<>();
 
-    public Player() {
 
-        this.name = null;  // o this.name = "NombrePredeterminado";
-        this.guesses = new ArrayList<>();
-    }
 
 
     public abstract int makeGuess();
 
-    public String getName(){
+    public  String getName(){
         return name;
 
 
     }
 
-    public ArrayList<Integer> getGuesses(){
+    public List<Integer> getGuesses(){
         return guesses;
 
     }
