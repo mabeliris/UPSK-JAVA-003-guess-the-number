@@ -2,9 +2,9 @@
 
 ### Sprint learnings
 
--Hacer test unitarios de mis clases.
--Mostrar el número de suposiciones e intentos de cada jugador y agregar la lógica dependiendo de quien sea el ganador.
--Aprender un poco más de como se usa While.
+- Hacer test unitarios de mis clases.
+- Mostrar el número de suposiciones e intentos de cada jugador y agregar la lógica dependiendo de quien sea el ganador.
+- Aprender un poco más de como se usa While.
 
 ### Added
 
