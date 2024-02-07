@@ -1,9 +1,4 @@
 import java.util.Random;
-//import java.util.ArrayList;
-
-
-
-
 
 public class GuessTheNumberGame {
 
@@ -15,7 +10,6 @@ public class GuessTheNumberGame {
 
 
    // Método de la clase
-
 
     public static void main(String[] args) {
 
@@ -56,10 +50,6 @@ public class GuessTheNumberGame {
         System.out.println("Historial de suposiciones de la computadora : " + computerPlayer.getGuesses());
 
 
-
-
-
-
     }
     private static boolean checkGuess(Player humanPlayer, Player computerPlayer) {
 
@@ -74,15 +64,9 @@ public class GuessTheNumberGame {
         //Ejecuta un turno
         while (true){
 
-            //Usar condicionales para los turnos
-            //usar condicionales para alternar turnos
-
             //obtiene la suposición
             int guess = currentPlayer.makeGuess();
 
-            //si el número es igual
-            //si el número es mayor
-            //si el número es menor
             //si es muy alto o muy bajo se debe continuar jugando
             //si es correcto, finaliza el juego
 
@@ -135,19 +119,13 @@ public class GuessTheNumberGame {
 
                 }
 
-
                 return currentPlayer == humanPlayer;
-               // break; // Terminar el juego
+
             }
 
         }
 
-        // RECUERDA CONTINUAR EL JUEGO EN CASO INCORRECTO
-        //EL ALEATORIO SOLO SE DEBE MOSTRAR UNA VEZ HASTA QUE ALGUIEN ADIVINE
-        //USAR WHILE
 
     }
-
-
 
 }

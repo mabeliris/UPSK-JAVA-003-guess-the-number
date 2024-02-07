@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.ArrayList;
-//import java.util.Scanner;
+
 
 
 public class ComputerPlayer extends Player{
@@ -8,7 +8,7 @@ public class ComputerPlayer extends Player{
     public ComputerPlayer (String name){
         this.name = name;
         guesses = new ArrayList<>();
-        //super(name);
+
 
     }
     public ComputerPlayer() {
@@ -27,8 +27,6 @@ public class ComputerPlayer extends Player{
 
         //Generar un número aleatorio para la computadora
 
-        //Scanner sc = new Scanner(System.in);
-
         int min = 1;
         int max = 100;
 
@@ -36,9 +34,8 @@ public class ComputerPlayer extends Player{
         int guess = random.nextInt(max - min + 1) + min;
 
 
-
         System.out.println("Número generado por la Computadora \n" + guess);
-        //int guess = Integer.parseInt(sc.nextLine());
+
 
         //Agrega los intentos al array
         guesses.add(guess);
@@ -51,7 +48,5 @@ public class ComputerPlayer extends Player{
         return (ArrayList<Integer>) guesses;
 
     }
-
-
 
 }
